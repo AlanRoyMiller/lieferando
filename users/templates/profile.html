@@ -1,0 +1,18 @@
+<!-- FILEPATH: /c:/Users/armil/Documents/Lieferando/lieferando/users/templates/profile.html -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Profile</title>
+    </head>
+    <body>
+        <h1>Welcome, {{ user.username|title }}!</h1>
+        <p>Here's your profile information:</p>
+        <ul>
+            <li><strong>Name:</strong> {{ user.first_name }} {{ user.last_name }}</li>
+            <li><strong>Email:</strong> {{ user.email }}</li>
+            <li><strong>Phone:</strong> {{ user.phone }}</li>
+            <li><strong>Address:</strong> {{ user.address }}</li>
+        </ul>
+    </body>
+</html>

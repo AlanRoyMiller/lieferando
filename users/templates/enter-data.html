@@ -1,0 +1,6 @@
+{% if user.is_authenticated %}
+    <h2>Welcome {{ user.username|capfirst }}</h2>
+    <a href="logout">Logout</a>
+    
+
+{% endif %}
